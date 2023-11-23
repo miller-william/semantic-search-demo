@@ -3,6 +3,15 @@
 This repository contains the prototype for a semantic search tool that uses open-source models to search, retrieve and summarise information from large text datasets. The project is organized into a utility library, a Jupyter notebook for testing, and a Streamlit application for live demonstrations.
 This current prototype matches the input search text against **each sentence** in each of the search texts.
 
+## Notes
+I wrote the code in this repo as part of a 3-day hackathon, before I had much experience with LLMs. So it definitely isn't the best way to implement semantic search.
+
+In this code, I have manually (and unnecessarily) built a vector store. This can be easily (and more efficiently) implemented using open source tools like [Chroma](https://github.com/chroma-core/chroma). 
+
+You may also want to use [Sentence Transformers](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) for embeddings, rather than Universal Sentence Encoder.
+
+However, whilst it's not the perfect implementation, this repo may still be useful for learning about semantic search and its mechanics!
+
 ## Structure
 
 - **utils/**: A folder containing utility functions and classes for data loading, semantic search, and other necessary operations.
